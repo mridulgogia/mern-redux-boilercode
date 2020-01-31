@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 
 const userRoutes = require('./routes/user');
 
+
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Contest, Accept, Content-Type, Authorization');
@@ -12,7 +13,7 @@ app.use((req, res, next) => {
     next();
 });
 
-mongoose.connect('mongodb+srv://mridul:Radhasoami0-@cluster0-irqtw.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true , useCreateIndex: true})
+mongoose.connect('mongodb+srv://mridul:Radhasoami-1-@cluster0-irqtw.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true , useCreateIndex: true})
 .then(() => {
   console.log('Mongodb Atlas connected successfully');
 })
